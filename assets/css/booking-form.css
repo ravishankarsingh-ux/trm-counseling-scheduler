@@ -1,0 +1,366 @@
+/**
+ * TRM Booking Form Styles
+ */
+
+.trm-booking-wrapper {
+    max-width: 600px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+    font-family: -apple-system, BlinkMacSystemFont, "Segoe UI", Roboto, Oxygen-Sans, Ubuntu, Cantarell, "Helvetica Neue", sans-serif;
+}
+
+.trm-booking-container {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.trm-booking-container h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+    font-size: 24px;
+}
+
+.trm-description {
+    text-align: center;
+    color: #666;
+    font-size: 14px;
+    margin-bottom: 30px;
+}
+
+/* Form Groups */
+.trm-form-group {
+    margin-bottom: 20px;
+}
+
+.trm-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.trm-form-group input[type="text"],
+.trm-form-group input[type="email"],
+.trm-form-group input[type="tel"],
+.trm-form-group input[type="date"],
+.trm-form-group input[type="number"],
+.trm-form-group select,
+.trm-form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.trm-form-group input:focus,
+.trm-form-group select:focus,
+.trm-form-group textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.2);
+}
+
+/* Steps */
+.trm-step {
+    margin: 20px 0;
+    padding: 20px;
+    background: #fafafa;
+    border-radius: 6px;
+    border-left: 4px solid #4CAF50;
+    display: none;
+}
+
+.trm-step.active {
+    display: block;
+}
+
+.trm-step h3 {
+    margin-top: 0;
+    margin-bottom: 20px;
+    color: #333;
+    font-size: 18px;
+}
+
+/* Notes and Messages */
+.trm-note {
+    color: #666;
+    font-size: 13px;
+    margin: 10px 0 0 0;
+    font-style: italic;
+}
+
+.trm-error {
+    color: #d32f2f;
+    font-size: 14px;
+    padding: 12px;
+    background: #ffebee;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+.trm-warning-message {
+    padding: 15px;
+    background: #fff3cd;
+    border: 1px solid #ffc107;
+    border-radius: 4px;
+    color: #856404;
+}
+
+.trm-success-message {
+    padding: 20px;
+    background: #d4edda;
+    border: 1px solid #28a745;
+    border-radius: 4px;
+    color: #155724;
+    text-align: center;
+}
+
+.trm-success-message h3 {
+    margin-top: 0;
+    color: #155724;
+}
+
+/* Time Slots */
+.time-slots-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.trm-time-slot {
+    padding: 10px;
+    border: 2px solid #ddd;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.trm-time-slot:hover {
+    border-color: #4CAF50;
+    background: #f0f7f0;
+}
+
+.trm-time-slot.selected {
+    background: #4CAF50;
+    color: white;
+    border-color: #45a049;
+}
+
+/* Radio and Checkbox Groups */
+.trm-radio-group,
+.trm-checkbox-group {
+    margin: 15px 0;
+}
+
+.trm-radio-label,
+.trm-checkbox-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.trm-radio-label input[type="radio"],
+.trm-checkbox-label input[type="checkbox"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Donation Buttons */
+.trm-donation-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.trm-donation-btn,
+.trm-donation-btn-nm {
+    padding: 12px 15px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+    font-size: 14px;
+}
+
+.trm-donation-btn:hover,
+.trm-donation-btn-nm:hover {
+    border-color: #4CAF50;
+    background: #f0f7f0;
+}
+
+.trm-donation-btn.selected,
+.trm-donation-btn-nm.selected {
+    background: #4CAF50;
+    color: white;
+    border-color: #45a049;
+}
+
+/* Buttons */
+.trm-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+    text-transform: none;
+}
+
+.trm-btn-primary {
+    background: #4CAF50;
+    color: white;
+}
+
+.trm-btn-primary:hover:not(:disabled) {
+    background: #45a049;
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+}
+
+.trm-btn-secondary {
+    background: #757575;
+    color: white;
+}
+
+.trm-btn-secondary:hover:not(:disabled) {
+    background: #616161;
+}
+
+.trm-btn-next,
+.trm-btn-back {
+    background: #4CAF50;
+    color: white;
+    margin-right: 10px;
+}
+
+.trm-btn-next:hover:not(:disabled),
+.trm-btn-back:hover:not(:disabled) {
+    background: #45a049;
+}
+
+.trm-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Form Actions */
+.trm-form-actions {
+    display: flex;
+    justify-content: flex-end;
+    gap: 10px;
+    margin-top: 20px;
+    padding-top: 20px;
+    border-top: 1px solid #eee;
+}
+
+/* Loading Spinner */
+.trm-loading {
+    text-align: center;
+    padding: 20px;
+}
+
+.trm-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #4CAF50;
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Event Selection Specific */
+#event_id {
+    width: 100%;
+    padding: 10px 12px;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    background: white;
+    cursor: pointer;
+}
+
+#event_id:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.2);
+}
+
+#event-description {
+    background: #e8f5e9;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+#event-description strong {
+    color: #2e7d32;
+}
+
+/* Responsive Design */
+@media (max-width: 600px) {
+    .trm-booking-wrapper {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .trm-booking-container {
+        padding: 20px;
+    }
+
+    .time-slots-container {
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+        gap: 8px;
+    }
+
+    .trm-form-actions {
+        flex-direction: column;
+    }
+
+    .trm-btn {
+        width: 100%;
+    }
+
+    .trm-donation-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+}
+
+/* Accessibility */
+.trm-btn:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 1px;
+}

@@ -1,0 +1,81 @@
+/* TRM Counseling Admin Styles */
+
+.trm-filters {
+    background: #fff;
+    padding: 20px;
+    margin-bottom: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.trm-filters form {
+    display: flex;
+    gap: 15px;
+    align-items: center;
+    flex-wrap: wrap;
+}
+
+.trm-filters label {
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.trm-filters select,
+.trm-filters input[type="date"] {
+    padding: 8px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+}
+
+.trm-status {
+    padding: 4px 12px;
+    border-radius: 12px;
+    font-size: 12px;
+    font-weight: 600;
+    text-transform: uppercase;
+}
+
+.trm-status-pending {
+    background: #fff3cd;
+    color: #856404;
+}
+
+.trm-status-confirmed {
+    background: #d1ecf1;
+    color: #0c5460;
+}
+
+.trm-status-completed {
+    background: #d4edda;
+    color: #155724;
+}
+
+.trm-status-cancelled {
+    background: #f8d7da;
+    color: #721c24;
+}
+
+.trm-stats {
+    background: #fff;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 4px;
+    box-shadow: 0 1px 3px rgba(0,0,0,0.1);
+}
+
+.trm-stats h3 {
+    color: #27ae60;
+    margin: 0;
+    font-size: 24px;
+}
+
+.form-table th {
+    width: 250px;
+}
+
+.trm-setting-description {
+    color: #666;
+    font-size: 13px;
+    font-style: italic;
+    margin-top: 5px;
+}

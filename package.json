@@ -1,0 +1,22 @@
+{
+  "name": "trm-counseling-scheduler",
+  "version": "1.0.0",
+  "description": "A comprehensive WordPress plugin for managing event-based booking for counseling sessions and webinars",
+  "author": "Ebenezer Caurie",
+  "license": "GPL-2.0-or-later",
+  "homepage": "https://github.com/ravishankarsingh-ux/trm-counseling-scheduler",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/ravishankarsingh-ux/trm-counseling-scheduler.git"
+  },
+  "keywords": [
+    "wordpress",
+    "plugin",
+    "booking",
+    "scheduling",
+    "counseling",
+    "webinar",
+    "events"
+  ],
+  "devDependencies": {}
+}

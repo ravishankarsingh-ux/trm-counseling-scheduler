@@ -1,0 +1,369 @@
+/* TRM Counseling Session Scheduler Styles */
+
+.trm-booking-wrapper {
+    max-width: 800px;
+    margin: 40px auto;
+    padding: 20px;
+}
+
+.trm-booking-container {
+    background: #fff;
+    border-radius: 8px;
+    box-shadow: 0 2px 10px rgba(0,0,0,0.1);
+    padding: 40px;
+}
+
+.trm-booking-container h2 {
+    color: #2c3e50;
+    margin-bottom: 10px;
+    font-size: 28px;
+}
+
+.trm-description {
+    color: #7f8c8d;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+.trm-step {
+    display: none;
+}
+
+.trm-step.active {
+    display: block;
+}
+
+.trm-step h3 {
+    color: #34495e;
+    margin-bottom: 20px;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #3498db;
+}
+
+.trm-form-group {
+    margin-bottom: 20px;
+}
+
+.trm-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #2c3e50;
+}
+
+.trm-form-group input[type="text"],
+.trm-form-group input[type="email"],
+.trm-form-group input[type="tel"],
+.trm-form-group input[type="date"],
+.trm-form-group input[type="number"] {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+    transition: border-color 0.3s;
+}
+
+.trm-form-group input:focus {
+    outline: none;
+    border-color: #3498db;
+}
+
+.time-slots-grid {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 10px;
+}
+
+.time-slot-btn {
+    padding: 12px 20px;
+    background: #ecf0f1;
+    border: 2px solid #bdc3c7;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 14px;
+    font-weight: 600;
+    transition: all 0.3s;
+}
+
+.time-slot-btn:hover {
+    background: #3498db;
+    color: #fff;
+    border-color: #3498db;
+}
+
+.time-slot-btn.selected {
+    background: #2980b9;
+    color: #fff;
+    border-color: #2980b9;
+}
+
+.trm-note {
+    color: #7f8c8d;
+    font-style: italic;
+    padding: 15px;
+    background: #ecf0f1;
+    border-radius: 4px;
+}
+
+.trm-error {
+    color: #e74c3c;
+    padding: 15px;
+    background: #fadbd8;
+    border-radius: 4px;
+}
+
+.trm-membership-question {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 4px;
+    margin-bottom: 20px;
+}
+
+.trm-membership-question p {
+    font-size: 18px;
+    font-weight: 600;
+    margin-bottom: 15px;
+    color: #2c3e50;
+}
+
+.trm-radio-group {
+    display: flex;
+    gap: 20px;
+}
+
+.trm-radio-label {
+    display: flex;
+    align-items: center;
+    gap: 8px;
+    font-size: 16px;
+    cursor: pointer;
+}
+
+.trm-radio-label input[type="radio"] {
+    width: 20px;
+    height: 20px;
+    cursor: pointer;
+}
+
+.trm-donation-message {
+    background: #e8f4f8;
+    padding: 20px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+    border-left: 4px solid #3498db;
+}
+
+.trm-donation-message p {
+    margin: 0;
+    color: #2c3e50;
+    line-height: 1.6;
+}
+
+.trm-donation-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(120px, 1fr));
+    gap: 15px;
+    margin-bottom: 20px;
+}
+
+.trm-donation-btn,
+.trm-donation-btn-nm {
+    padding: 15px 20px;
+    background: #fff;
+    border: 2px solid #3498db;
+    border-radius: 4px;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 600;
+    color: #3498db;
+    transition: all 0.3s;
+}
+
+.trm-donation-btn:hover,
+.trm-donation-btn-nm:hover {
+    background: #3498db;
+    color: #fff;
+}
+
+.trm-donation-btn.selected,
+.trm-donation-btn-nm.selected {
+    background: #2980b9;
+    color: #fff;
+    border-color: #2980b9;
+}
+
+.trm-custom-amount-wrapper,
+.trm-custom-amount-wrapper-nm {
+    margin-top: 15px;
+}
+
+.trm-custom-amount-wrapper input,
+.trm-custom-amount-wrapper-nm input {
+    width: 100%;
+    padding: 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 16px;
+}
+
+.trm-warning-message {
+    background: #fff3cd;
+    padding: 25px;
+    border-radius: 4px;
+    border-left: 4px solid #ffc107;
+    margin-bottom: 25px;
+}
+
+.trm-warning-message p {
+    margin: 10px 0;
+    color: #856404;
+    line-height: 1.6;
+}
+
+.trm-booking-summary {
+    background: #f8f9fa;
+    padding: 25px;
+    border-radius: 4px;
+    margin-bottom: 25px;
+}
+
+.summary-item {
+    padding: 10px 0;
+    border-bottom: 1px solid #dee2e6;
+    font-size: 16px;
+}
+
+.summary-item:last-child {
+    border-bottom: none;
+}
+
+.summary-item strong {
+    display: inline-block;
+    width: 150px;
+    color: #2c3e50;
+}
+
+.trm-success-message {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.trm-success-message h3 {
+    color: #27ae60;
+    font-size: 32px;
+    margin-bottom: 15px;
+}
+
+.trm-confidentiality {
+    margin-top: 30px;
+    padding: 20px;
+    background: #e8f4f8;
+    border-radius: 4px;
+    font-size: 14px;
+    color: #2c3e50;
+    font-style: italic;
+}
+
+.trm-form-actions {
+    display: flex;
+    gap: 15px;
+    margin-top: 25px;
+}
+
+.trm-btn {
+    padding: 12px 30px;
+    border: none;
+    border-radius: 4px;
+    font-size: 16px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.3s;
+}
+
+.trm-btn-primary {
+    background: #3498db;
+    color: #fff;
+}
+
+.trm-btn-primary:hover:not(:disabled) {
+    background: #2980b9;
+}
+
+.trm-btn-secondary {
+    background: #95a5a6;
+    color: #fff;
+}
+
+.trm-btn-secondary:hover:not(:disabled) {
+    background: #7f8c8d;
+}
+
+.trm-btn-back {
+    background: #ecf0f1;
+    color: #2c3e50;
+}
+
+.trm-btn-back:hover {
+    background: #bdc3c7;
+}
+
+.trm-btn-next {
+    background: #3498db;
+    color: #fff;
+}
+
+.trm-btn-next:hover:not(:disabled) {
+    background: #2980b9;
+}
+
+.trm-btn:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+.trm-loading {
+    position: fixed;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+    background: rgba(0,0,0,0.5);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    z-index: 9999;
+}
+
+.trm-spinner {
+    width: 50px;
+    height: 50px;
+    border: 5px solid #f3f3f3;
+    border-top: 5px solid #3498db;
+    border-radius: 50%;
+    animation: spin 1s linear infinite;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+@media (max-width: 768px) {
+    .trm-booking-container {
+        padding: 20px;
+    }
+    
+    .time-slots-grid,
+    .trm-donation-options {
+        grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+    }
+    
+    .trm-form-actions {
+        flex-direction: column;
+    }
+    
+    .trm-btn {
+        width: 100%;
+    }
+}

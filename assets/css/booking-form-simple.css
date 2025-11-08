@@ -1,0 +1,363 @@
+/**
+ * TRM Simplified Booking Form Styles - Single Page
+ */
+
+.trm-booking-wrapper-simple {
+    max-width: 700px;
+    margin: 30px auto;
+    padding: 20px;
+    background: #f9f9f9;
+    border-radius: 8px;
+    box-shadow: 0 2px 8px rgba(0,0,0,0.1);
+}
+
+.trm-booking-container-simple {
+    background: white;
+    padding: 30px;
+    border-radius: 8px;
+}
+
+.trm-booking-container-simple h2 {
+    margin-top: 0;
+    color: #333;
+    text-align: center;
+    font-size: 26px;
+    margin-bottom: 10px;
+}
+
+.trm-description {
+    text-align: center;
+    color: #666;
+    font-size: 13px;
+    margin-bottom: 30px;
+    font-style: italic;
+}
+
+/* Form Sections */
+.trm-form-section {
+    margin-bottom: 20px;
+}
+
+.trm-section-title {
+    font-size: 18px;
+    font-weight: 600;
+    color: #2c3e50;
+    margin: 0 0 15px 0;
+    padding-bottom: 10px;
+    border-bottom: 2px solid #4CAF50;
+}
+
+/* Dividers */
+.trm-divider {
+    border: none;
+    height: 1px;
+    background: #e0e0e0;
+    margin: 25px 0;
+}
+
+/* Form Groups */
+.trm-form-group {
+    margin-bottom: 15px;
+}
+
+.trm-form-group label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+    color: #333;
+    font-size: 14px;
+}
+
+.trm-form-group input[type="text"],
+.trm-form-group input[type="email"],
+.trm-form-group input[type="tel"],
+.trm-form-group input[type="date"],
+.trm-form-group input[type="number"],
+.trm-form-group select,
+.trm-form-group textarea {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+    font-family: inherit;
+    transition: border-color 0.2s;
+}
+
+.trm-form-group input:focus,
+.trm-form-group select:focus,
+.trm-form-group textarea:focus {
+    outline: none;
+    border-color: #4CAF50;
+    box-shadow: 0 0 4px rgba(76, 175, 80, 0.2);
+}
+
+/* Event Details */
+.trm-event-details {
+    background: #e8f5e9;
+    padding: 12px;
+    border-radius: 4px;
+    margin-top: 10px;
+    font-size: 13px;
+    line-height: 1.6;
+}
+
+.trm-event-details strong {
+    color: #2e7d32;
+}
+
+/* Time Slots */
+.time-slots-container {
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(80px, 1fr));
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.trm-time-slot-simple {
+    padding: 10px;
+    border: 2px solid #ddd;
+    background: white;
+    border-radius: 4px;
+    cursor: pointer;
+    transition: all 0.2s;
+    font-size: 13px;
+    font-weight: 500;
+}
+
+.trm-time-slot-simple:hover {
+    border-color: #4CAF50;
+    background: #f0f7f0;
+}
+
+.trm-time-slot-simple.selected {
+    background: #4CAF50;
+    color: white;
+    border-color: #45a049;
+}
+
+/* Radio Groups */
+.trm-radio-group {
+    margin: 15px 0;
+}
+
+.trm-radio-label {
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    cursor: pointer;
+    font-weight: normal;
+}
+
+.trm-radio-label input[type="radio"] {
+    margin-right: 8px;
+    cursor: pointer;
+}
+
+/* Donation Options */
+.trm-donation-options {
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+    gap: 10px;
+    margin: 15px 0;
+}
+
+.trm-donation-btn-simple {
+    padding: 12px 15px;
+    background: white;
+    border: 2px solid #ddd;
+    border-radius: 4px;
+    cursor: pointer;
+    font-weight: 600;
+    transition: all 0.2s;
+    font-size: 14px;
+}
+
+.trm-donation-btn-simple:hover {
+    border-color: #4CAF50;
+    background: #f0f7f0;
+}
+
+.trm-donation-btn-simple.selected {
+    background: #4CAF50;
+    color: white;
+    border-color: #45a049;
+}
+
+/* Buttons */
+.trm-btn {
+    padding: 12px 25px;
+    border: none;
+    border-radius: 4px;
+    font-size: 14px;
+    font-weight: 600;
+    cursor: pointer;
+    transition: all 0.2s;
+}
+
+.trm-btn-primary {
+    background: #4CAF50;
+    color: white;
+    width: 100%;
+}
+
+.trm-btn-primary:hover {
+    background: #45a049;
+    box-shadow: 0 2px 8px rgba(76, 175, 80, 0.3);
+}
+
+.trm-btn-primary:disabled {
+    opacity: 0.5;
+    cursor: not-allowed;
+}
+
+/* Form Actions */
+.trm-form-actions-simple {
+    margin-top: 20px;
+    text-align: center;
+}
+
+/* Notes and Messages */
+.trm-note {
+    color: #666;
+    font-size: 13px;
+    margin: 10px 0;
+    font-style: italic;
+}
+
+.trm-error {
+    color: #d32f2f;
+    font-size: 14px;
+    padding: 12px;
+    background: #ffebee;
+    border-radius: 4px;
+    margin: 10px 0;
+}
+
+/* Loading */
+.trm-loading {
+    text-align: center;
+    padding: 40px 20px;
+}
+
+.trm-spinner {
+    border: 4px solid #f3f3f3;
+    border-top: 4px solid #4CAF50;
+    border-radius: 50%;
+    width: 40px;
+    height: 40px;
+    animation: spin 1s linear infinite;
+    margin: 0 auto 15px;
+}
+
+@keyframes spin {
+    0% { transform: rotate(0deg); }
+    100% { transform: rotate(360deg); }
+}
+
+/* Success Message */
+.trm-success-message-simple {
+    padding: 30px;
+    background: #d4edda;
+    border: 1px solid #28a745;
+    border-radius: 4px;
+    color: #155724;
+    text-align: center;
+}
+
+.trm-success-message-simple h3 {
+    margin-top: 0;
+    color: #155724;
+    font-size: 20px;
+}
+
+.trm-success-message-simple p {
+    margin: 10px 0;
+}
+
+.trm-confidentiality {
+    font-size: 12px;
+    margin-top: 15px;
+    font-style: italic;
+}
+
+#confirmation-details {
+    background: white;
+    padding: 15px;
+    border-radius: 4px;
+    margin: 15px 0;
+    text-align: left;
+}
+
+#confirmation-details p {
+    margin: 8px 0;
+}
+
+/* Custom Amount Wrapper */
+.trm-custom-amount-wrapper {
+    margin-top: 15px;
+    padding: 15px;
+    background: #f5f5f5;
+    border-radius: 4px;
+}
+
+.trm-custom-amount-wrapper label {
+    display: block;
+    margin-bottom: 8px;
+    font-weight: 600;
+}
+
+.trm-custom-amount-wrapper input {
+    width: 100%;
+    padding: 10px 12px;
+    border: 1px solid #ddd;
+    border-radius: 4px;
+    font-size: 14px;
+    box-sizing: border-box;
+}
+
+/* Responsive */
+@media (max-width: 600px) {
+    .trm-booking-wrapper-simple {
+        padding: 10px;
+        margin: 10px;
+    }
+
+    .trm-booking-container-simple {
+        padding: 15px;
+    }
+
+    .trm-booking-container-simple h2 {
+        font-size: 20px;
+    }
+
+    .time-slots-container {
+        grid-template-columns: repeat(auto-fill, minmax(70px, 1fr));
+        gap: 8px;
+    }
+
+    .trm-donation-options {
+        grid-template-columns: repeat(2, 1fr);
+    }
+
+    .trm-btn {
+        padding: 10px 20px;
+        font-size: 13px;
+    }
+}
+
+/* Accessibility */
+.trm-btn:focus,
+.trm-time-slot-simple:focus,
+.trm-donation-btn-simple:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 2px;
+}
+
+input:focus,
+select:focus,
+textarea:focus {
+    outline: 2px solid #4CAF50;
+    outline-offset: 1px;
+}
