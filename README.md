@@ -1,3 +1,4 @@
+<<<<<<< HEAD
 # TRM Counseling Session Scheduler
 
 A comprehensive WordPress plugin for managing event-based counseling sessions and webinars with advanced capacity management, multiple payment gateways, and flexible booking rules.
@@ -574,3 +575,7 @@ Trinity Revival Ministry
 ---
 
 **Last Updated:** November 7, 2025
+=======
+# trm-counseling-scheduler
+WordPress plugin for event-based counseling session booking
+>>>>>>> 7cc45c4bb85cee164f4def792f6df701ac927b8a

@@ -3,7 +3,7 @@
  * Plugin Name: TRM Counseling Session Scheduler
  * Plugin URI: https://trinityrevivalministry.org
  * Description: A comprehensive counseling session booking system with member/non-member differentiation, donation integration, and admin dashboard for Trinity Revival Ministry.
- * Version: 1.0.0
+ * Version: 1.1.0
  * Author: Ebenezer Caurie
  * Author URI: https://trinityrevivalministry.org
  * License: GPL v2 or later
@@ -17,7 +17,7 @@ if (!defined('ABSPATH')) {
 }
 
 // Define plugin constants
-define('TRM_COUNSELING_VERSION', '1.0.0');
+define('TRM_COUNSELING_VERSION', '1.1.0');
 define('TRM_COUNSELING_PLUGIN_DIR', plugin_dir_path(__FILE__));
 define('TRM_COUNSELING_PLUGIN_URL', plugin_dir_url(__FILE__));
 
@@ -30,6 +30,7 @@ require_once TRM_COUNSELING_PLUGIN_DIR . 'includes/class-trm-shortcodes.php';
 require_once TRM_COUNSELING_PLUGIN_DIR . 'includes/class-trm-ajax.php';
 require_once TRM_COUNSELING_PLUGIN_DIR . 'includes/class-trm-payment.php';
 require_once TRM_COUNSELING_PLUGIN_DIR . 'includes/class-trm-updater.php';
+require_once TRM_COUNSELING_PLUGIN_DIR . 'includes/class-trm-colors.php';
 
 // Activation hook
 register_activation_hook(__FILE__, 'trm_counseling_activate');
@@ -62,6 +63,7 @@ function trm_counseling_init() {
     new TRM_Shortcodes();
     new TRM_Ajax();
     new TRM_Payment();
+    new TRM_Colors();
 }
 
 // Enqueue scripts and styles

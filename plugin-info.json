@@ -1,13 +1,13 @@
 {
   "name": "TRM Counseling Session Scheduler",
   "slug": "trm-counseling-scheduler",
-  "version": "1.0.0",
+  "version": "1.1.0",
   "author": "<a href=\"https://trinityrevivalministry.org\">Ebenezer Caurie</a>",
   "author_profile": "https://github.com/yourusername",
   "description": "A comprehensive WordPress plugin for managing event-based booking for counseling sessions and webinars with member/non-member differentiation, donation integration, and multiple payment gateway support.",
   "short_description": "Event-based booking system for counseling sessions and webinars with Stripe, PayPal, and offline payment support.",
   "homepage": "https://github.com/ravishankarsingh-ux/trm-counseling-scheduler",
-  "download_link": "https://github.com/ravishankarsingh-ux/trm-counseling-scheduler/releases/download/v1.0.0/trm-counseling-scheduler.zip",
+  "download_link": "https://github.com/ravishankarsingh-ux/trm-counseling-scheduler/releases/download/v1.1.0/trm-counseling-scheduler.zip",
   "requires": "5.0",
   "requires_php": "7.2",
   "tested": "6.4",
@@ -16,7 +16,7 @@
     "description": "A comprehensive WordPress plugin for managing event-based booking for counseling sessions and webinars. Features include flexible booking rules, member/non-member differentiation, donation integration, and multiple payment gateways (Stripe, PayPal, Offline).",
     "installation": "1. Upload the plugin folder to /wp-content/plugins/\n2. Activate the plugin through 'Plugins' menu in WordPress\n3. Go to TRM Counseling > Settings to configure payment gateways\n4. Create events/webinars in TRM Counseling > Events/Webinars\n5. Add [trm_booking_form] shortcode to your page",
     "faq": "Q: How do I add events?\nA: Navigate to TRM Counseling > Events/Webinars and click Add New Event.\n\nQ: What payment gateways are supported?\nA: Stripe (Checkout redirect), PayPal, and Offline (Bank Transfer/Cash).\n\nQ: Can I limit bookings per time slot?\nA: Yes, set capacity and choose between single or multiple bookings per slot in event settings.\n\nQ: How are member sessions different?\nA: Members get the full event duration. Non-members get 15 minutes free or 30 minutes with donation.",
-    "changelog": "= 1.0.0 =\n* Initial release\n* Event-based booking system\n* Multiple payment gateways\n* Admin dashboard with booking management\n* Email notifications\n* Automatic update checking"
+    "changelog": "= 1.1.0 =\n* Color customization for time slot selection\n* Added color picker in admin settings\n* Support for custom background and text colors\n\n= 1.0.0 =\n* Initial release\n* Event-based booking system\n* Multiple payment gateways\n* Admin dashboard with booking management\n* Email notifications\n* Automatic update checking"
   },
   "banners": {
     "low": "https://cdn.example.com/trm-banner-772x250.jpg",

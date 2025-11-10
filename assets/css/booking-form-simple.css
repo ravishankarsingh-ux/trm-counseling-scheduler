@@ -118,7 +118,8 @@
 .trm-time-slot-simple {
     padding: 10px;
     border: 2px solid #ddd;
-    background: white;
+    background-color: #f5f5f5;
+    color: #333333;
     border-radius: 4px;
     cursor: pointer;
     transition: all 0.2s;
@@ -128,13 +129,12 @@
 
 .trm-time-slot-simple:hover {
     border-color: #4CAF50;
-    background: #f0f7f0;
 }
 
 .trm-time-slot-simple.selected {
-    background: #4CAF50;
+    background-color: #28a745;
     color: white;
-    border-color: #45a049;
+    border-color: #28a745;
 }
 
 /* Radio Groups */

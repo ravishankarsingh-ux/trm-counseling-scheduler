@@ -173,6 +173,57 @@ if (!defined('ABSPATH')) exit;
             </tr>
         </table>
         
+        <h2>Booking Form - Color Customization</h2>
+        <p>Customize the colors of available and selected time slots in the booking form.</p>
+        <table class="form-table">
+            <tr>
+                <th><label for="trm_slot_bg_color">Available Slot Background Color</label></th>
+                <td>
+                    <input type="color" id="trm_slot_bg_color" name="trm_slot_bg_color" 
+                           value="<?php echo esc_attr(TRM_Database::get_setting('trm_slot_bg_color', '#f5f5f5')); ?>">
+                    <p class="description">Color of available time slot buttons</p>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="trm_slot_text_color">Available Slot Text Color</label></th>
+                <td>
+                    <input type="color" id="trm_slot_text_color" name="trm_slot_text_color" 
+                           value="<?php echo esc_attr(TRM_Database::get_setting('trm_slot_text_color', '#333333')); ?>">
+                    <p class="description">Text color of available time slot buttons</p>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="trm_slot_selected_bg_color">Selected Slot Background Color</label></th>
+                <td>
+                    <input type="color" id="trm_slot_selected_bg_color" name="trm_slot_selected_bg_color" 
+                           value="<?php echo esc_attr(TRM_Database::get_setting('trm_slot_selected_bg_color', '#28a745')); ?>">
+                    <p class="description">Color of selected time slot button</p>
+                </td>
+            </tr>
+            <tr>
+                <th><label for="trm_slot_selected_text_color">Selected Slot Text Color</label></th>
+                <td>
+                    <input type="color" id="trm_slot_selected_text_color" name="trm_slot_selected_text_color" 
+                           value="<?php echo esc_attr(TRM_Database::get_setting('trm_slot_selected_text_color', '#ffffff')); ?>">
+                    <p class="description">Text color of selected time slot button</p>
+                </td>
+            </tr>
+        </table>
+        
+        <div style="margin-top: 30px; padding: 20px; background: #f9f9f9; border: 1px solid #ddd; border-radius: 5px;">
+            <h3>Color Preview</h3>
+            <div style="margin-bottom: 20px;">
+                <p><strong>Available Slots:</strong></p>
+                <button style="background-color: <?php echo esc_attr(TRM_Database::get_setting('trm_slot_bg_color', '#f5f5f5')); ?>; color: <?php echo esc_attr(TRM_Database::get_setting('trm_slot_text_color', '#333333')); ?>; padding: 8px 12px; border: 1px solid #ccc; margin: 5px; cursor: pointer; border-radius: 4px;">09:00</button>
+                <button style="background-color: <?php echo esc_attr(TRM_Database::get_setting('trm_slot_bg_color', '#f5f5f5')); ?>; color: <?php echo esc_attr(TRM_Database::get_setting('trm_slot_text_color', '#333333')); ?>; padding: 8px 12px; border: 1px solid #ccc; margin: 5px; cursor: pointer; border-radius: 4px;">10:00</button>
+                <button style="background-color: <?php echo esc_attr(TRM_Database::get_setting('trm_slot_bg_color', '#f5f5f5')); ?>; color: <?php echo esc_attr(TRM_Database::get_setting('trm_slot_text_color', '#333333')); ?>; padding: 8px 12px; border: 1px solid #ccc; margin: 5px; cursor: pointer; border-radius: 4px;">11:00</button>
+            </div>
+            <div>
+                <p><strong>Selected Slot:</strong></p>
+                <button style="background-color: <?php echo esc_attr(TRM_Database::get_setting('trm_slot_selected_bg_color', '#28a745')); ?>; color: <?php echo esc_attr(TRM_Database::get_setting('trm_slot_selected_text_color', '#ffffff')); ?>; padding: 8px 12px; border: none; margin: 5px; cursor: pointer; border-radius: 4px;">10:30 (Selected)</button>
+            </div>
+        </div>
+        
         <?php submit_button('Save Settings', 'primary', 'trm_save_settings'); ?>
     </form>
 </div>

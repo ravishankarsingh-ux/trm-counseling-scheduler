@@ -110,7 +110,11 @@ class TRM_Admin {
                 'stripe_secret_key',
                 'paypal_client_id',
                 'paypal_secret',
-                'offline_payment_instructions'
+                'offline_payment_instructions',
+                'trm_slot_bg_color',
+                'trm_slot_text_color',
+                'trm_slot_selected_bg_color',
+                'trm_slot_selected_text_color'
             );
             
             foreach ($settings as $setting) {
