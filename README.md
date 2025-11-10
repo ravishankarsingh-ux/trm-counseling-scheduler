@@ -1,9 +1,8 @@
-<<<<<<< HEAD
 # TRM Counseling Session Scheduler
 
-A comprehensive WordPress plugin for managing event-based counseling sessions and webinars with advanced capacity management, multiple payment gateways, and flexible booking rules.
+A comprehensive WordPress plugin for managing event-based counseling sessions and webinars with advanced capacity management, multiple payment gateways, flexible booking rules, and customizable time slot colors.
 
-**Version:** 1.0.0  
+**Version:** 1.1.0  
 **Author:** Ebenezer Caurie  
 **Organization:** Trinity Revival Ministry  
 **License:** GPL v2 or later
@@ -541,6 +540,13 @@ HAVING count >= 1; -- or capacity value
 
 ## 🔄 Version History
 
+**1.1.0** (Color Customization & Manual Updates)
+- Color customization for time slot selection (background and text colors)
+- Color settings in admin dashboard with live preview
+- Manual "Check for Updates" button in Settings
+- Update check clears cache and forces GitHub version check
+- Displays current version in Settings page
+
 **1.0.0** (Initial Release)
 - Event/Webinar management
 - Single & multiple booking capacity
@@ -548,6 +554,7 @@ HAVING count >= 1; -- or capacity value
 - Email notifications
 - Admin dashboard
 - Recurring events support
+- Automatic update checking from GitHub
 
 ---
 
@@ -574,8 +581,4 @@ Trinity Revival Ministry
 
 ---
 
-**Last Updated:** November 7, 2025
-=======
-# trm-counseling-scheduler
-WordPress plugin for event-based counseling session booking
->>>>>>> 7cc45c4bb85cee164f4def792f6df701ac927b8a
+**Last Updated:** November 10, 2025
