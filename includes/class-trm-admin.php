@@ -95,6 +95,27 @@ class TRM_Admin {
     }
     
     public function settings_page() {
+        // Handle manual update check
+        if (isset($_POST['trm_check_updates']) && check_admin_referer('trm_update_check_nonce')) {
+            // Clear cache and force update check
+            delete_transient('trm_update_check');
+            delete_site_transient('update_plugins');
+            
+            // Force WordPress to check for updates
+            wp_update_plugins();
+            
+            // Get the update transient to see if there's an update
+            $update_plugins = get_site_transient('update_plugins');
+            $plugin_file = 'trm-counseling-scheduler/trm-counseling-scheduler.php';
+            
+            if (isset($update_plugins->response[$plugin_file])) {
+                $new_version = $update_plugins->response[$plugin_file]->new_version;
+                echo '<div class="notice notice-warning"><p><strong>Update Available!</strong> Version ' . $new_version . ' is available. <a href="' . admin_url('plugins.php') . '">Go to Plugins page to update</a>.</p></div>';
+            } else {
+                echo '<div class="notice notice-success"><p><strong>No updates available.</strong> You have the latest version (' . TRM_COUNSELING_VERSION . ').</p></div>';
+            }
+        }
+        
         // Handle settings update
         if (isset($_POST['trm_save_settings']) && check_admin_referer('trm_settings_nonce')) {
             $settings = array(

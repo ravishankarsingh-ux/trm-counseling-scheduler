@@ -9,6 +9,16 @@ if (!defined('ABSPATH')) exit;
 <div class="wrap">
     <h1>Trinity Revival Ministry - Settings</h1>
     
+    <div style="margin-bottom: 20px;">
+        <form method="post" action="" style="display: inline;">
+            <?php wp_nonce_field('trm_update_check_nonce'); ?>
+            <button type="submit" name="trm_check_updates" class="button button-secondary" style="margin-right: 10px;">
+                🔄 Check for Updates
+            </button>
+            <span style="color: #666; font-size: 12px;">Current version: <?php echo TRM_COUNSELING_VERSION; ?></span>
+        </form>
+    </div>
+    
     <form method="post" action="">
         <?php wp_nonce_field('trm_settings_nonce'); ?>
         
